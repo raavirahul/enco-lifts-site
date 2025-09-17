@@ -23,9 +23,6 @@
     img{max-width:100%;display:block}
     .container{width:min(1200px,92%);margin-inline:auto}
 
-    a { color:inherit; text-decoration:none }
-    img { max-width:100%; display:block }
-
     /* Typography */
     h1, h2, h3, .section-title h2 {
       font-family:'Caladea', serif;
@@ -41,7 +38,6 @@
       color:#111111;
     }
 
-    
     /* NAV */
     .nav{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid #eee}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0;gap:1rem}
@@ -99,7 +95,6 @@
     .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
     .gallery-item{background:var(--card);border:1px solid #eee;border-radius:14px;overflow:hidden;transition:transform .25s ease, box-shadow .25s ease}
     .gallery-item:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.08)}
-    .gallery-item .ph{aspect-ratio:4/3;background:linear-gradient(180deg,#e8eaee,#c9ced8)}
 
     /* CONTACT */
     .contact{display:grid;grid-template-columns:1.1fr 1fr;gap:1.4rem;align-items:start}
@@ -131,15 +126,14 @@
       .hamburger{display:flex}
     }
   </style>
-<!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ490W2N5V"></script>
-    <script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ490W2N5V"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-DJ490W2N5V');
-    </script>
-
+  </script>
 </head>
 <body>
   <!-- NAV -->
@@ -187,43 +181,51 @@
   </header>
 
   <!-- SERVICES -->
-  <section id="services" aria-labelledby="services-title">
-    <div class="container">
-      <div class="section-title">
-        <h2 id="services-title">Our Services</h2>
-      </div>
-      <div class="services">
-        <article class="card" aria-label="Passenger Elevators">
-          <div class="thumb">
-          <img src="assets/gallery1.jpg" alt="Passenger Elevator" loading="lazy">
-          </div>
-          <h3 style="margin:8.0rem 0 0.4rem; color:#000000;">Passenger Elevators</h3>
-          <p style="color:#000000;">Comfortable, efficient rides with premium finishes and smart controls.</p>
-        </article>
-         <article class="card" aria-label="Goods Elevators">
-          <div class="thumb">
-          <img src="assets/gallery2.jpeg" alt="Goods Elevator" loading="lazy">
-          </div>
-          <h3 style="margin:1.2rem 0 0.4rem; color:#000000;">Goods Elevators</h3>
-          <p style="color:#000000;">Heavy-duty performance engineered for warehouses and industry.</p>
-        </article>
-        <article class="card" aria-label="Hospital Elevators">
-          <div class="thumb">
-          <img src="assets/gallery3.jpg" alt="Hospital Elevator" loading="lazy">
-          </div>
-          <h3 style="margin:11.0rem 0 0.4rem; color:#000000;">Hospital Elevators</h3>
-          <p style="color:#000000;">Smooth, spacious cabins meeting medical-grade standards.</p>
-        </article>
-        <article class="card" aria-label="Hydraulic Elevators">
-         <div class="thumb">
-          <img src="assets/gallery4.jpeg" alt="Hydraulic Elevator" loading="lazy">
-          </div>
-          <h3 style="margin:6.2rem 0 0.4rem; color:#000000;">Hydraulic Elevators</h3>
-          <p style="color:#000000;">Cost-effective solutions ideal for low- to mid-rise buildings.</p>
-        </article>
-      </div>
+<section id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-title">
+      <h2 id="services-title">Our Services</h2>
     </div>
-  </section>
+    <div class="services">
+      <article class="card" aria-label="Passenger Elevators">
+        <div class="thumb" style="height:180px; overflow:hidden; border-radius:12px;">
+          <img src="assets/gallery1.jpg" alt="Passenger Elevator" loading="lazy"
+               style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <h3 style="margin:.9rem 0 .35rem; color:#000000;">Passenger Elevators</h3>
+        <p style="color:#000000;">Comfortable, efficient rides with premium finishes and smart controls.</p>
+      </article>
+
+      <article class="card" aria-label="Goods Elevators">
+        <div class="thumb" style="height:180px; overflow:hidden; border-radius:12px;">
+          <img src="assets/gallery2.jpeg" alt="Goods Elevator" loading="lazy"
+               style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <h3 style="margin:.9rem 0 .35rem; color:#000000;">Goods Elevators</h3>
+        <p style="color:#000000;">Heavy-duty performance engineered for warehouses and industry.</p>
+      </article>
+
+      <article class="card" aria-label="Hospital Elevators">
+        <div class="thumb" style="height:180px; overflow:hidden; border-radius:12px;">
+          <img src="assets/gallery3.jpg" alt="Hospital Elevator" loading="lazy"
+               style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <h3 style="margin:.9rem 0 .35rem; color:#000000;">Hospital Elevators</h3>
+        <p style="color:#000000;">Smooth, spacious cabins meeting medical-grade standards.</p>
+      </article>
+
+      <article class="card" aria-label="Hydraulic Elevators">
+        <div class="thumb" style="height:180px; overflow:hidden; border-radius:12px;">
+          <img src="assets/gallery4.jpeg" alt="Hydraulic Elevator" loading="lazy"
+               style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <h3 style="margin:.9rem 0 .35rem; color:#000000;">Hydraulic Elevators</h3>
+        <p style="color:#000000;">Cost-effective solutions ideal for low- to mid-rise buildings.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 
   <!-- GALLERY -->
   <section id="gallery" aria-labelledby="gallery-title">
@@ -240,7 +242,7 @@
         <img src="assets/6.jpeg" alt="Glass Elevator" loading="lazy">
         <img src="assets/gallery7.jpg" alt="Building Lobby with Lift" loading="lazy">
         <img src="assets/gallery8.jpg" alt="Luxury Elevator Design" loading="lazy">
-    </div>
+      </div>
     </div>
   </section>
 
@@ -252,7 +254,7 @@
       </div>
       <div class="features-grid">
         <div class="feat">
-          <h4>Reliable & On‑Time Service</h4>
+          <h4>Reliable & On-Time Service</h4>
           <p>Dedicated maintenance teams and rapid response SLAs to keep you moving.</p>
         </div>
         <div class="feat">
@@ -261,51 +263,50 @@
         </div>
         <div class="feat">
           <h4>Safety First</h4>
-          <p>Compliance with stringent safety codes and multi‑layer fail‑safes.</p>
+          <p>Compliance with stringent safety codes and multi-layer fail-safes.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-<section id="about" aria-labelledby="about-title">
-  <div class="container about">
-    <div>
-      <div class="section-title" style="text-align:left">
-        <h2 id="about-title">About Us</h2>
-      </div>
-      <p>
-        Born in North Karnataka and raised by heights — ENCO Lifts has been
-        serving the market for years as a trusted service provider. From our
-        early beginnings, we have focused on reliability, safety, and design,
-        helping customers move with confidence and style.
-      </p>
-      <p>
-        Today, with deep expertise in installation, modernization, and
-        maintenance, we stand tall as a partner for residential, commercial,
-        and industrial spaces. Our journey is rooted in local values yet driven
-        by global standards.
-      </p>
+  <section id="about" aria-labelledby="about-title">
+    <div class="container about">
+      <div>
+        <div class="section-title" style="text-align:left">
+          <h2 id="about-title">About Us</h2>
+        </div>
+        <p>
+          Born in North Karnataka and raised by heights — ENCO Lifts has been
+          serving the market for years as a trusted service provider. From our
+          early beginnings, we have focused on reliability, safety, and design,
+          helping customers move with confidence and style.
+        </p>
+        <p>
+          Today, with deep expertise in installation, modernization, and
+          maintenance, we stand tall as a partner for residential, commercial,
+          and industrial spaces. Our journey is rooted in local values yet driven
+          by global standards.
+        </p>
 
-      <!-- Inline Stats -->
-      <div style="margin-top:1.5rem; display:flex; gap:3rem; font-family:'Caladea', serif;">
-        <div style="text-align:center;">
-          <h2 style="margin:0; font-size:2rem; font-weight:700; color:#800020;">10+</h2>
-          <p style="margin:0; font-family:'Open Sans', sans-serif; font-weight:600; color:#111111;">Lifts Under Maintenance</p>
+        <!-- Inline Stats -->
+        <div style="margin-top:1.5rem; display:flex; gap:3rem; font-family:'Caladea', serif;">
+          <div style="text-align:center;">
+            <h2 style="margin:0; font-size:2rem; font-weight:700; color:#800020;">10+</h2>
+            <p style="margin:0; font-family:'Open Sans', sans-serif; font-weight:600; color:#111111;">Lifts Under Maintenance</p>
+          </div>
+          <div style="text-align:center;">
+            <h2 style="margin:0; font-size:2rem; font-weight:700; color:#800020;">15+</h2>
+            <p style="margin:0; font-family:'Open Sans', sans-serif; font-weight:600; color:#111111;">New Lifts Installed</p>
+          </div>
         </div>
-        <div style="text-align:center;">
-          <h2 style="margin:0; font-size:2rem; font-weight:700; color:#800020;">15+</h2>
-          <p style="margin:0; font-family:'Open Sans', sans-serif; font-weight:600; color:#111111;">New Lifts Installed</p>
-        </div>
+      </div>
+
+      <div class="image">
+        <img src="assets/logo.png" alt="ENCO Lifts team" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
       </div>
     </div>
-
-    <div class="image">
-      <img src="assets/logo.png" alt="ENCO Lifts team" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" aria-labelledby="contact-title">
@@ -331,48 +332,65 @@
         <h3 style="margin-top:0">Talk to our team</h3>
 
         <p class="small">
-         <strong>Head Office:</strong><br>
-        📍 221 NE, Jigani Industrial Area, Bengaluru, Karnataka<br>
-        ✉️ encolifts@gmail.com<br>
-        ☎️ +91 8951512789
-    </p>
+          <strong>Head Office:</strong><br>
+          📍 221 NE, Jigani Industrial Area, Bengaluru, Karnataka<br>
+          ✉️ encolifts@gmail.com<br>
+          ☎️ +91 8951512789
+        </p>
 
-    <p class="small" style="margin-top:1rem;">
-      <strong>Branch Office:</strong><br>
-      📍 #03, Vidyanagar 3rd Cross, Cantonment, Bellary, Karnataka<br>
-      ✉️ encolifts@gmail.com<br>
-      ☎️ +91 9440850442
-    </p>
+        <p class="small" style="margin-top:1rem;">
+          <strong>Branch Office:</strong><br>
+          📍 #03, Vidyanagar 3rd Cross, Cantonment, Bellary, Karnataka<br>
+          ✉️ encolifts@gmail.com<br>
+          ☎️ +91 9440850442
+        </p>
 
-    <p class="small">Working hours: Mon–Sat, 9:00–18:00</p>
-    <div style="margin-top:1.5rem; text-align:center;">
-      <h3 style="margin:0 0 0.8rem; font-family:'Caladea', serif; font-weight:700; color:#111111;">
-      We Support Make in India
-    </h3>
-    <img src="assets/make.jpeg" alt="Make in India Logo" style="height:100px; display:inline-block;">
-</div>
-</div>
+        <p class="small">Working hours: Mon–Sat, 9:00–18:00</p>
 
-    </aside>
+        <!-- WhatsApp Button in Contact Section (QR link) -->
+        <div style="margin-top:1.5rem; text-align:center;">
+          <a href="https://wa.me/qr/JHDXITM7TK3ML1" target="_blank" 
+             style="display:inline-flex; align-items:center; gap:.5rem; background:#25D366; color:#fff; padding:.7rem 1rem; border-radius:8px; font-weight:600; text-decoration:none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                 alt="WhatsApp" style="width:22px; height:22px;">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div style="margin-top:1.5rem; text-align:center;">
+          <h3 style="margin:0 0 0.8rem; font-family:'Caladea', serif; font-weight:700; color:#111111;">
+            We Support Make in India
+          </h3>
+          <img src="assets/make.jpeg" alt="Make in India Logo" style="height:100px; display:inline-block;">
+        </div>
+      </aside>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="contact" aria-labelledby="contact-title">
-  <div class="container footer-inner" style="padding:1.2rem 0; flex-direction:column; text-align:center; color:#ffffff;">
-    <div class="foot-brand" style="justify-content:center; margin-bottom:0.5rem; color:#ffffff;">
-      <span class="e-bars" aria-hidden="true" style="display:inline-grid; gap:4px;">
-        <span style="background:#ffffff; height:3px; width:18px;"></span>
-        <span style="background:#ffffff; height:3px; width:18px;"></span>
-        <span style="background:#ffffff; height:3px; width:18px;"></span>
-      </span>
-      <span>ENCO LIFTS</span>
+    <div class="container footer-inner" style="padding:1.2rem 0; flex-direction:column; text-align:center; color:#ffffff;">
+      <div class="foot-brand" style="justify-content:center; margin-bottom:0.5rem; color:#ffffff;">
+        <span class="e-bars" aria-hidden="true" style="display:inline-grid; gap:4px;">
+          <span style="background:#ffffff; height:3px; width:18px;"></span>
+          <span style="background:#ffffff; height:3px; width:18px;"></span>
+          <span style="background:#ffffff; height:3px; width:18px;"></span>
+        </span>
+        <span>ENCO LIFTS</span>
+      </div>
+      <p class="small" style="margin:0; font-size:0.85rem; color:#ffffff;">
+        © 2025 ENCO Lifts. All Rights Reserved.
+      </p>
     </div>
-    <p class="small" style="margin:0; font-size:0.85rem; color:#ffffff;">
-      © 2025 ENCO Lifts. All Rights Reserved.
-    </p>
-  </div>
-</footer>
+  </footer>
+
+  <!-- Floating WhatsApp Button (direct chat to +91 8951512789) -->
+  <a href="https://wa.me/918951512789" target="_blank" 
+     aria-label="Chat on WhatsApp"
+     style="position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:14px; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,.2); z-index:1000;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp" style="width:28px; height:28px;">
+  </a>
 
   <script>
     // Simple mobile menu toggle (progressive enhancement)
